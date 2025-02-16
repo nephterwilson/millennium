@@ -1,0 +1,156 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium PVT School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href="index.html" class="text-2xl font-bold">Millennium School</a>
+    
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+    
+            <!-- Navigation Links -->
+            <div id="menu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-yellow-300">Home</a>
+                <a href="about.html" class="hover:text-yellow-300">About</a>
+                <a href="portfolio.html" class="hover:text-yellow-300">Portfolio</a>
+                <a href="https://results.wtec1.com" class="hover:text-yellow-300" target="_blank">Get Results</a>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white px-6 py-4">
+            <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+            <a href="about.html" class="block py-2 hover:text-yellow-300">About</a>
+            <a href="portfolio.html" class="block py-2 hover:text-yellow-300">Portfolio</a>
+            <a href="https://results.wtec1.com" class="hover:text-yellow-300" target="_blank">Get Results</a>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+    
+
+    <!-- Portfolio Section -->
+    <section class="py-16 container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8">Our Top Performers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Student 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/catherine.png" alt="Top Student" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Catherine Kachala</h3>
+                    <p class="text-gray-600">Highest scorer in 2024 MSCE.</p>
+                </div>
+            </div>
+            <!-- Student 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/chisomo.png" alt="Top Student" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Chisomo Chiboda</h3>
+                    <p class="text-gray-600">Highest in 2025 Term 1 Form 4.</p>
+                </div>
+            </div>
+
+             <!-- Student 3 -->
+             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/Linda.png" alt="Top Student" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold mb-2">Linda Yohane</h3>
+                    <p class="text-gray-600">2025 Best student in Term 1 Form 3.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <h3 class="text-2xl font-semibold mb-4">School Events</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Event 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/yes.JPG" alt="Event" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">2023 excursion</h3>
+                        <p class="text-gray-600">Students during the outfield.</p>
+                    </div>
+                </div>
+
+                 <!-- Event 1 -->
+                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/group.jpg" alt="Event" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Graduation 2024</h3>
+                        <p class="text-gray-600">Students showcasing innovative projects.</p>
+                    </div>
+                </div>
+
+                 <!-- Event 1 -->
+                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/mille.jpg" alt="Event" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Graduation 2024 at Masonga</h3>
+                        <p class="text-gray-600">Students experiencing the wonderful moments</p>
+                    </div>
+                </div>
+                 <!-- Event 1 -->
+                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/gara.jpg" alt="Event" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Part of 2023 Graduation</h3>
+                        <p class="text-gray-600">Students after receiving the testimonials </p>
+                    </div>
+                </div>
+                 <!-- Event 1 -->
+                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/team.jpg" alt="Event" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">2023 Graduation</h3>
+                        <p class="text-gray-600">Students feeling the occasion.</p>
+                    </div>
+                </div>
+
+                 <!-- Event 1 -->
+                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/millennium.jpg" alt="Event" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">2023 Graduation</h3>
+                        <p class="text-gray-600">Students showcasing innovative insights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-600 text-white py-6 text-center">
+        <p class="text-lg">© <span id="year"></span> Our School. All Rights Reserved.</p>
+        <p class="mt-2">
+            <a href="index.html" class="hover:text-yellow-300 mx-2">Home</a> |
+            <a href="about.html" class="hover:text-yellow-300 mx-2">About</a> |
+            <a href="portfolio.html" class="hover:text-yellow-300 mx-2">Portfolio</a>
+        </p>
+    </footer>
+    
+    <script>
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>
+
+

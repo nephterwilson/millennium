@@ -1,0 +1,128 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href="index.html" class="text-2xl font-bold">Millennium School</a>
+    
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+    
+            <!-- Navigation Links -->
+            <div id="menu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-yellow-300">Home</a>
+                <a href="about.html" class="hover:text-yellow-300">About</a>
+                <a href="portfolio.html" class="hover:text-yellow-300">Portfolio</a>
+                <a href="https://results.wtec1.com" class="hover:text-yellow-300" target="_blank">Get Results</a>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white px-6 py-4">
+            <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+            <a href="about.html" class="block py-2 hover:text-yellow-300">About</a>
+            <a href="portfolio.html" class="block py-2 hover:text-yellow-300">Portfolio</a>
+            <a href="https://results.wtec1.com" class="hover:text-yellow-300" target="_blank">Get Results</a>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+    
+
+    <!-- About Section -->
+    <section class="py-16 container mx-auto text-center px-6">
+        <h2 class="text-4xl font-bold mb-8 text-blue-600">About Us</h2>
+        <p class="text-lg mb-10 text-gray-700 max-w-2xl mx-auto">
+            Our school has a rich history of providing quality education with a focus on nurturing young minds.
+        </p>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- History Widget -->
+            <div class="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto bg-blue-100 rounded-full">
+                    <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 16l-4-4m0 0l4-4m-4 4h16"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6 text-blue-700">Our History</h3>
+                <p class="text-gray-600 mt-4">
+                    Founded in 2019, our school has a long-standing tradition of academic excellence and character-building education.
+                </p>
+            </div>
+    
+            <!-- Subjects Widget -->
+            <div class="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto bg-yellow-100 rounded-full">
+                    <svg class="w-10 h-10 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-4 6h4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6 text-yellow-700">Subjects Offered</h3>
+                <ul class="list-disc pl-5 text-gray-600 mt-4 space-y-2 text-left">
+                    <li>Agriculture</li>
+                    <li>Biology</li>
+                    <li>Chemistry</li>
+                    <li>Mathematics</li>
+                    <li>Chichewa</li>
+                    <li>English</li>
+                    <li>History</li>
+                    <li>Geography</li>
+                    <li>Physics</li>
+                </ul>
+            </div>
+    
+            <!-- Excellence Widget -->
+            <div class="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                <div class="flex items-center justify-center w-16 h-16 mx-auto bg-green-100 rounded-full">
+                    <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-semibold mt-6 text-green-700">Commitment to Excellence</h3>
+                <p class="text-gray-600 mt-4">
+                    We strive for excellence in education by providing the best learning environment for our students.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-blue-600 text-white py-6 text-center">
+        <p class="text-lg">© <span id="year"></span> Our School. All Rights Reserved.</p>
+        <p class="mt-2">
+            <a href="index.html" class="hover:text-yellow-300 mx-2">Home</a> |
+            <a href="about.html" class="hover:text-yellow-300 mx-2">About</a> |
+            <a href="portfolio.html" class="hover:text-yellow-300 mx-2">Portfolio</a>
+        </p>
+    </footer>
+    
+    <script>
+        document.getElementById("year").innerText = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>

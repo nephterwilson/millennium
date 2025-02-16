@@ -1,0 +1,141 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennium PVT School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a href="index.html" class="text-2xl font-bold">Millennium School</a>
+    
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+    
+            <!-- Navigation Links -->
+            <div id="menu" class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-yellow-300">Home</a>
+                <a href="about.html" class="hover:text-yellow-300">About</a>
+                <a href="portfolio.html" class="hover:text-yellow-300">Portfolio</a>
+                <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                <a href="https://results.wtec1.com" class="hover:text-yellow-300" target="_blank">Get Results</a>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 text-white px-6 py-4">
+            <a href="index.html" class="block py-2 hover:text-yellow-300">Home</a>
+            <a href="about.html" class="block py-2 hover:text-yellow-300">About</a>
+            <a href="portfolio.html" class="block py-2 hover:text-yellow-300">Portfolio</a>
+            <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+            <a href="https://results.wtec1.com" class="hover:text-yellow-300" target="_blank">Get Results</a>
+        </div>
+    </nav>
+    
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+
+
+
+<section class="py-16 container mx-auto text-center px-6">
+    <h2 class="text-4xl font-bold mb-8 text-blue-600">Contact Us</h2>
+    <p class="text-lg mb-10 text-gray-700 max-w-2xl mx-auto">
+        Get in touch with us for any inquiries or visit our school at the location below.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Location Widget -->
+        <div class="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+            <div class="flex items-center justify-center w-16 h-16 mx-auto bg-blue-100 rounded-full">
+                <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17.657 16.657L13.414 12m0 0L9.172 7.758a4 4 0 015.656-5.656l.707.707a4 4 0 010 5.656L13.414 12zm0 0l4.243 4.243a4 4 0 010 5.656l-.707.707a4 4 0 01-5.656 0L9.172 19.415"></path>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mt-6 text-blue-700">Our Location</h3>
+            <p class="text-gray-600 mt-4">
+                Area 25 Sector 7, Lilongwe, Malawi
+            </p>
+        </div>
+
+        <!-- Phone Widget -->
+        <div class="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+            <div class="flex items-center justify-center w-16 h-16 mx-auto bg-yellow-100 rounded-full">
+                <svg class="w-10 h-10 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 10l1-2a2 2 0 012.172-1.172l2 1a2 2 0 01.828.828l1 2a2 2 0 01-1.172 2.172l-1 1a16 16 0 005.656 5.656l1-1a2 2 0 012.172-1.172l2 1a2 2 0 011.172 2.172l-1 2a2 2 0 01-2 1H6a2 2 0 01-2-2v-1"></path>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mt-6 text-yellow-700">Phone Numbers</h3>
+            <p class="text-gray-600 mt-4">
+                +265 995 591 835<br> +265 881 043 286
+            </p>
+        </div>
+
+        <!-- Email Widget -->
+        <div class="bg-white shadow-lg rounded-2xl p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+            <div class="flex items-center justify-center w-16 h-10 mx-auto bg-green-100 rounded-full">
+                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M16 12H3m13 0l-4-4m4 4l-4 4M21 5v14"></path>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mt-6 text-green-700">Email Address</h3>
+            <p class="text-gray-600 mt-4">
+                millenniumpvtschool@gmail.com<br> info@wtec1.com
+            </p>
+        </div>
+        <p>
+        <div class="flex justify-center items-center">
+            <a href="index.html" class="bg-yellow-500 text-black py-3 px-6 rounded-full text-xl font-semibold hover:bg-yellow-600">
+                Home Page
+            </a>
+        </div>
+    </p>
+        
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="bg-blue-600 text-white py-6 text-center">
+    <p class="text-lg">© <span id="year"></span> Our School. All Rights Reserved.</p>
+    <p class="mt-2">
+        <a href="index.html" class="hover:text-yellow-300 mx-2">Home</a> |
+        <a href="about.html" class="hover:text-yellow-300 mx-2">About</a> |
+        <a href="portfolio.html" class="hover:text-yellow-300 mx-2">Portfolio</a>
+    </p>
+</footer>
+
+<script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+</script>
+
+</body>
+</html>
